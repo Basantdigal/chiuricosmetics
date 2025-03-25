@@ -1,6 +1,9 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
+
+# production
+#/build  # <- Comment this out to allow the /build folder
 /node_modules
 /.pnp
 .pnp.*
