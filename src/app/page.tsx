@@ -7,7 +7,6 @@ import TestimonialsSection from "@/components/sections/TestimonialsSection";
 import Footer from "@/components/sections/Footer";
 
 export default function Home() {
-  console.log("Home component rendered");
   return (
     <main className="min-h-screen">
       <HeroSection />

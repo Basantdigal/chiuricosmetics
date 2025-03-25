@@ -28,7 +28,7 @@ export default function HeroSection() {
         <p className="text-md md:text-lg text-white mb-8 max-w-2xl">
           Discover the nourishing power of this ancient secret
         </p>
-        <Button className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-md text-lg" size="lg">
+        <Button className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-md text-lg" size="lg">
           Learn More
         </Button>
       </div>

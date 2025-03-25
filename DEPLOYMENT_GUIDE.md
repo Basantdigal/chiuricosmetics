@@ -5,6 +5,30 @@
 - Netlify account
 - Node.js v18+ installed locally
 
+## Local Development (Static Export)
+1. Install dependencies:
+```bash
+npm install
+```
+
+2. Build the static site:
+```bash
+npm run build
+```
+
+3. Serve the exported site:
+```bash
+npm start
+```
+
+4. Access at: http://localhost:3000
+
+### Troubleshooting
+- If you see blank pages, ensure:
+  - You ran both `build` and `export`
+  - No dynamic server-side features are used
+  - All routes have corresponding HTML files in `out`
+
 ## 1. GitHub Setup
 ```bash
 git init
@@ -13,7 +37,22 @@ git commit -m "Initial commit"
 gh repo create chiuri-butter --public --push --source=.
 ```
 
-## 2. Netlify Configuration
+## 2. GitHub Pages Deployment
+1. Ensure workflow file exists in `.github/workflows/gh-pages.yml`
+2. Push changes to main branch:
+```bash
+git push origin main
+```
+3. GitHub Actions will automatically:
+   - Build the static site
+   - Deploy to gh-pages branch
+4. Enable GitHub Pages:
+   - Go to Repository Settings > Pages
+   - Select "Deploy from branch"
+   - Choose "gh-pages" branch
+   - Click "Save"
+
+## 3. Netlify Configuration
 1. Go to [Netlify](https://app.netlify.com/) and click "New site from Git"
 2. Select GitHub as your Git provider
 3. Choose the chiuri-butter repository
