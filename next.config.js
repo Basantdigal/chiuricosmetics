@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Add this line to enable static exports
+  output: 'export',
+  images: {
+    unoptimized: true // Required for static exports
+  }
 };
 
 module.exports = nextConfig;
