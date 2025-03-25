@@ -1,0 +1,23 @@
+[build]
+  command = "npm run build"
+  publish = "out"
+  functions = "functions"
+
+[build.environment]
+  NODE_VERSION = "18.17.1"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[context.production.environment]
+  NEXT_PUBLIC_SITE_URL = "$URL"
