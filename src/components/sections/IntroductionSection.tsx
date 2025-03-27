@@ -40,14 +40,12 @@ export default function IntroductionSection() {
               />
               {/* Smaller Image - Use simplified src */}
               <div className="absolute -bottom-8 -right-8 w-32 h-32 z-10 border-4 border-background rounded-md shadow-lg">
-                <Image
-                  // --- CHANGE THIS LINE ---
-                  src="/images/chiuri-flower.jpg"
-                  // --- END CHANGE ---
-                  alt="Chiuri flowers"
-                  fill
-                  className="rounded-sm object-cover"
-                  sizes="128px"
+                <Image 
+                src="/chiuricosmetics/images/chiuri-flower.jpg"
+                alt="Chiuri flowers"
+                fill
+                className="rounded-sm object-cover"
+                sizes="128px"
                 />
               </div>
             </div>
