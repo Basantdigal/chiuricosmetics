@@ -38,7 +38,7 @@ export default function UsageSection() {
             <div className="bg-emerald-50 p-6 rounded-xl h-full">
               <div className="relative w-full h-64 mb-6">
                 <Image
-                  src="/images/chiuri-butter-raw.jpg"
+                  src="public/images/chiuri-butter-raw.jpg"
                   alt="Raw Chiuri Butter"
                   fill
                   className="rounded-lg object-cover"
