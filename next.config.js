@@ -1,9 +1,13 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export',
-  images: {
-    unoptimized: true // Required for static exports
-  }
-};
+// next.config.js
+const repo = 'chiuricosmetics'; // Your repository name
+const assetPrefix = `/${repo}/`;
+const basePath = `/${repo}`;
 
-module.exports = nextConfig;
+module.exports = {
+  output: 'export', // Crucial for static export with newer Next.js versions
+  assetPrefix: assetPrefix,
+  basePath: basePath,
+  images: {
+    unoptimized: true, // Necessary for static export (`next export`)
+  },
+};
